@@ -59,6 +59,21 @@ public class Fuvarprogram {
             ossztav += fuvarok.get(i).getTavolsag();
         }
         System.out.printf("%.2f km ",(ossztav*1.6));
+        
+        System.out.println("7.feladat");
+        int max = 0;
+        int ez = 0;
+        for (int i = 0; i < fuvarok.size(); i++) {
+           if(fuvarok.get(i).getIdotartam()> max) {
+            max = fuvarok.get(i).getIdotartam();
+            ez = i;
+           }
+        }
+        System.out.println(fuvarok.get(ez).getIdotartam()+" másodperc");
+        System.out.println("Taxi azonositoja: "+fuvarok.get(ez).getAzonosito());
+        System.out.println(fuvarok.get(ez).getTavolsag()+ " km");
+        System.out.println(fuvarok.get(ez).getViteldij()+ " $");
     } 
+    
 
 }
