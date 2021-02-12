@@ -16,6 +16,12 @@ public class Fuvarprogram {
         for (int i = 1; i < sorok.size(); i++) {
             fuvarok.add(new Fuvar(sorok.get(i)));
         }
+        
+        int fuvarokszama = 0;
+        for (int i = 0; i < fuvarok.size(); i++) {
+            fuvarokszama++;
+        }
+        System.out.print("3.feladat: " +fuvarokszama+" fuvar");
     }
     
 }
