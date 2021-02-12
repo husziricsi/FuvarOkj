@@ -22,6 +22,17 @@ public class Fuvarprogram {
             fuvarokszama++;
         }
         System.out.print("3.feladat: " +fuvarokszama+" fuvar");
+        double osszesbev = 0;
+        int osszfuvar = 0;
+        System.out.println("4. feladat");
+        for (int i = 0; i < fuvarok.size(); i++) {
+            if(fuvarok.get(i).getAzonosito() == 6185){
+            osszfuvar++;
+           osszesbev += fuvarok.get(i).getViteldij();
+            }
+            
+        }
+        System.out.println(osszfuvar+ "fuvar alatt: " + osszesbev+ "$");
     }
     
 }

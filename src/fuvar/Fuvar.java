@@ -25,5 +25,34 @@ public class Fuvar {
         this.borravalo = Double.parseDouble(s[5]);
         this.fizetesmod = s[6];
     }
+
+    public int getAzonosito() {
+        return azonosito;
+    }
+
+    public String getIndulas() {
+        return indulas;
+    }
+
+    public int getIdotartam() {
+        return idotartam;
+    }
+
+    public double getTavolsag() {
+        return tavolsag;
+    }
+
+    public double getViteldij() {
+        return viteldij;
+    }
+
+    public double getBorravalo() {
+        return borravalo;
+    }
+
+    public String getFizetesmod() {
+        return fizetesmod;
+    }
+    
     
 }
